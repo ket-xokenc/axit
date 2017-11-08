@@ -10,40 +10,16 @@
   justify-content: space-between;
   align-items: flex-end;
   padding: 110px 0 140px;
-
-  @media (max-width: 1150px) {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-    align-items: center;
-    padding: 80px 0;
-  }
 }
 
 .axure-logo {
   width: 175px;
-
-  @media (max-width: 768px) {
-    margin: 0 auto;
-  }
 }
 
 .axure-info {
   color: #fff;
   max-width: 516px;
   text-align: left;
-
-  @media (max-width: 960px) {
-    width: 45%;
-  }
-
-  @media (max-width: 768px) {
-    width: 90%;
-    text-align: center;
-  }
 }
 
 .axure-tagline {
@@ -52,10 +28,6 @@
   font-size: 36px;
   line-height: 1.2;
   margin: 30px 0 0;
-
-  @media (max-width: 1100px) {
-    font-size: calc(16px + 1.2vw);
-  }
 }
 
 .axure-description {
@@ -82,26 +54,20 @@
   line-height: 1.2;
   border: 2px solid white;
   padding: 10px 29px;
+  background: transparent;
   transition: background-color 0.3s;
+  color: #fff;
+}
 
-  &:hover {
-    cursor: pointer;
-    background-color: #ff9b51;
-    border-color: transparent;
-  }
+.btn-download:hover {
+  cursor: pointer;
+  background-color: #ff9b51;
+  border-color: transparent;
 }
 
 .form-wrapper {
   max-width: 362px;
   width: 100%;
-
-  @media (max-width: 768px) {
-    margin-top: 70px;
-  }
-
-  @media (max-width: 420px) {
-    width: 90%;
-  }
 }
 
 .form-header {
@@ -114,10 +80,6 @@
   text-align: center;
   margin: 0;
   padding: 12px 0;
-
-  @media (max-width: 420px) {
-    font-size: 18px;
-  }
 }
 
 .emphasized-word {
@@ -140,10 +102,6 @@
   padding: 35px 0 5px 15px;
   display: block;
   margin: 0 auto;
-
-  @media (max-width: 768px) {
-    width: 80%;
-  }
 }
 
 .trial-form__field::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -198,9 +156,61 @@
   padding: 18px 0;
   border-radius: 0 0 5px 5px;
   margin-top: 49px;
+}
 
-  &:hover {
-    cursor: pointer;
-    opacity: 0.8;
+.trial-form__btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+@media (max-width: 1150px) {
+  .axure-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .axure-tagline {
+    font-size: calc(16px + 1.2vw);
+  }
+}
+
+@media (max-width: 960px) {
+  .axure-info {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .axure-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0;
+  }
+
+  .axure-logo {
+    margin: 0 auto;
+  }
+
+  .axure-info {
+    width: 90%;
+    text-align: center;
+  }
+
+  .form-wrapper {
+    margin-top: 70px;
+  }
+
+  .trial-form__field {
+    width: 80%;
+  }
+}
+
+@media (max-width: 420px) {
+  .form-wrapper {
+    width: 90%;
+  }
+
+  .form-header {
+    font-size: 18px;
   }
 }
